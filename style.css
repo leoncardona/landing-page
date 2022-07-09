@@ -3,21 +3,156 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+#header,
+#main,
+#footer {
   background-color: #1f2937;
 }
 
-.header h1 {
-  font-size: 24px;
-  color: #f9faf8
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 200px;
 }
 
-.header ul {
+#header-logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #f9faf8;
+}
+
+#header-links {
   display: flex;
   font-size: 18px;
-  color: #e5e7eb;
   list-style: none;
+  gap: 24px;
+}
+
+#header-links a {
+  color: #e5e7eb;
+  text-decoration: none;
+}
+
+#main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 200px;
+}
+
+#main-info {
+  margin-right: 100px;
+}
+
+#main-info-title {
+  font-size: 48px;
+  font-weight: bold;
+  color: #f9faf8;
+}
+
+#main-info p {
+  margin: 0;
+  color: #e5e7eb;
+}
+
+#main-info button {
+  background-color: #3882f6;
+  color: #f9faf8;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 12px;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 32px;
+  cursor: pointer;
+}
+
+#information {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 56px;
+}
+
+#information-title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #1f2937;
+  margin-bottom: 42px;
+}
+
+#information-cards {
+  display: flex;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 22px;
+}
+
+.card p {
+  color: #404040;
+}
+
+#quote-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #e5e7eb;
+  color: #1f2937;
+  padding: 100px 400px;
+}
+
+#quote {
+  font-size: 36px;
+  font-weight: lighter;
+}
+
+#author {
+  font-weight: bold;
+  display: flex;
+  justify-content: end;
+}
+
+
+#register {
+  display: flex;
+  justify-content: space-between;
+  background-color: #3882f6;
+  gap: 200px;
+  padding: 50px 200px;
+  margin: 100px 200px;
+  border-radius: 8px;
+}
+
+#register button {
+  background-color: #3882f6;
+  color: #f9faf8;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 12px;
+  border: 2px solid #f9faf8;
+  border-radius: 8px;
+  padding: 8px 32px;
+  cursor: pointer;
+}
+
+#register-info-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #f9faf8; 
+}
+
+#register-info p {
+  margin: 0;
+  color: #e5e7eb;
+}
+
+#footer {
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+  color: #f9faf8;
 }
